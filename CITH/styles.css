@@ -7,6 +7,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.6;
     overflow-x: hidden;
@@ -53,7 +57,7 @@ body {
     padding: 2em 2em;
 }
 
-
+/* Mint Button Area */
 .mint-now {
     display: flex;
     justify-content: center;
@@ -88,6 +92,8 @@ body {
 }
 
 .info-one, .info-two, .info-three, .info-four {
+    flex: 1 1 300px;
+    margin: 1rem;
     background-color: #2C2F3C;
     border: 1px solid #3A3F4B;
     padding: 2rem;
@@ -126,6 +132,15 @@ h2 {
 .info-one p, .info-two p, .info-three p, .info-four p {
     color: #A2A8B3; 
     line-height: 1.6;
+    font-size: 18px;
+    font-family: 'CITH', sans-serif;
+}
+
+.info-one h2, .info-two h2, .info-three h2, .info-four h2 {
+    font-family: 'CITH', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,4 +148,11 @@ h2 {
         margin: 1.5rem 1rem;
         padding: 1.5rem;
     }
+}
+
+@font-face {
+    font-family: 'CITH';
+    src: url(/CITH/ASSETS/font/papyrus.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
